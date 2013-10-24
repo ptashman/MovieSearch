@@ -68,11 +68,12 @@
 				<div class="span3">
 					<h4>Your Movie:</h4>
 					<ul>
-						<li><%= doc.TitleName %></li>
-						<li><%= doc.TitleName %></li>
-						<li><%= doc.TitleName %></li>
-						<li><%= doc.TitleName %></li>
-						<li><%= doc.TitleName %></li>
+                  				<li>Name: <%= doc.TitleName %></li>
+                                                <li>ID: <%= doc.TitleId %></li>
+                                                <li>Story Lines: <% doc.Storylines.forEach(function(line) { %>
+							<%= line.Description %><% }); %></li>
+                                                <li>Awards: <% doc.Awards.forEach(function(award) { %>
+							<%= award.Award %><% }); %></li>
 					</ul>
 				</div>
 			</div>
