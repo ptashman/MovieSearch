@@ -1,7 +1,7 @@
 MovieSearch
 ===========
 
-Turner Coding Problem
+Movie DB table search app using the greatness of NodeJS and MongoDB.
 
 See files:
 
